@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isabella Ouyang | Aspiring Associate Product Manager">
+  <title>Isabella Ouyang | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">Isabella Ouyang</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section for PeerUp -->
+  <section class="hero-section project-hero">
+    <div class="container hero-text">
+      <h1>PeerUp</h1>
+      <p><i><strong>Connecting Students for Collaborative Learning</strong></i><br><br>
+        An innovative platform to foster peer learning and collaboration in academic environments.</p>
+      <a href="#project-details" class="cta-button">Explore Project</a>
+    </div>
+  </section>
+
+  <!-- Project Details Section -->
+  <section id="project-details" class="project-details">
+    <div class="container">
+      <h2>About the PeerUp Project</h2>
+      <ul>
+        <li><p><strong>Type:</strong> Solo iteration on a group academic project</li>
+        <li><p><strong>Role:</strong> Product Designer & Manager</li>
+        <li><p><strong>Timeline:</strong> 1 month (2018, 2023)</li>
+        <li><p><strong>Tools Used:</strong> Figma, Adobe XD, User Interviews, Persona and Scenario Development, UX Research, Competative Analysis, User Testing, Wireframe & Prototype</li>
+        <li><p><strong>Objective:</strong> Address the growing need for personalized, peer-based support systems in education, especially in hybrid and remote learning environments. PeerUp is designed to connect students based on academic goals, learning styles, and complementary strengths to foster more effective study partnerships.</li>
+      </ul>
+      <br>
+
+      <div class="project-info">
+      <h3>Market Need</h3>
+      <p>
+        With the rise of hybrid and remote education models, students often lack the face-to-face interactions that help them build collaborative learning relationships.
+        Research indicates that peer-supported learning improves retention, understanding, and motivation.
+        PeerUp aims to fill the gap by providing a digital solution that mimics the collaborative benefits of in-person study groups, while offering more personalized support.
+      </p>
+      <br>
+
+      <h3>Value Proposition</h3>
+      <p>
+        PeerUp delivers a platform where students can easily find peers with complementary skills and common academic goals.
+      The value lies in connecting learners who may struggle with certain subjects with others who excel, creating a balanced, mutually beneficial learning environment.
+      By incorporating learning theories like Constructivism and Social Learning Theory, the platform encourages users to teach and learn from one another, thus reinforcing their own knowledge while benefiting others.
+      </p>
+      <br>
+
+      <h3>Target Audience</h3>
+      <p>
+        Primarily targeting high school and college students, PeerUp caters to those who may feel isolated in remote learning environments, lack access to traditional tutoring services, or find it hard to seek help from TAs and professors.
+        The platform also appeals to educational institutions that want to boost student engagement and retention through peer-to-peer learning opportunities.
+      </p>
+      </div>
+
+      <div class="project-image">
+        <h3>Product Development</h3>
+        <img src="img\PeerUp\peerup_final2.jpg" alt="PeerUp Mockup" class="responsive-img">
+        <img src="img\PeerUp\peerup_final3.jpg" alt="PeerUp Mockup" class="responsive-img">
+        <img src="img\PeerUp\peerup_final4.jpg" alt="PeerUp Mockup" class="responsive-img">
+      </div>
+
+      <div class="project-goals">
+        <h3>Project Goals</h3>
+        <ul>
+          <li><p>Improve User Engagement: Increase daily active users (DAUs) by building in social gamification elements like learning streaks, badges, and rewards for successful peer tutoring sessions.</li>
+          <li><p>Retention & Impact: Measure success through user retention rates and educational outcomes such as improved grades or user-reported comprehension.</li>
+          <li><p>Personalization: Implement adaptive learning algorithms to match students based on learning styles, skill gaps, and academic goals, ensuring a personalized and effective study experience.</li>
+        </ul>
+      </div>
+
+      <div class="project-challenges">
+        <h3>Challenges & Solutions</h3>
+        <p>1. User Adoption & Engagement</p>
+          <ul>
+          <li><p>Challenge: Students may be reluctant to adopt yet another platform, especially if it doesn’t clearly demonstrate value upfront.</li>
+          <li><p>Solution: Introduce a streamlined onboarding process with quick wins, such as immediate peer matches or small rewards for completing initial activities. Emphasize the tangible benefits through tutorials, testimonials, and gamification features to encourage early engagement.</li>
+          </ul>
+        <p>2. Scaling Across Different Learning Environments</p>
+          <ul>
+            <li><p>Challenge: A one-size-fits-all approach might not work for different types of learners (e.g., high school vs. university students) or across different subjects.</li>
+            <li><p>Solution: Develop customizable features for institutions, where the platform can be tailored to specific curricula or learning objectives.
+              Include options for group learning and advanced peer feedback for varied levels of study.</li>
+          </ul>
+          <p>3. Monitoring Learning Outcomes</p>
+            <ul>
+              <li><p>Challenge: It can be difficult to measure the actual educational outcomes and impact of peer collaboration.</li>
+              <li><p>Solution: Implement data collection on user performance before and after sessions.
+                Incorporate feedback systems that assess learning outcomes directly linked to PeerUp’s usage.
+                Offer users analytics to see how peer learning improves their academic performance.</li>
+            </ul>
+      </div>
+
+      <div class="project-process">
+        <h3>Product Process Book</h3>
+        <p>  This project has undergone re-design based on the CMU HCI course Information Design back in 2018.
+        With the development of Artificial Intelligence in recent year, I realized the idea of manual pair for peer study had become obsolete.
+        So, I iterated on the idea but refocused the technology to be more automated and personalized for users, to avoid the hustle of manual scheduling and pairing.
+        <br>Below is the process book for the previous ideation, research process, and prototype.
+        </p>
+        <div class="col-md-12 col-lg-8 mx-auto">
+          <iframe src="https://drive.google.com/file/d/1j85zwm7e0FL3WVebwbNZ0lropR2-6j_F/preview" width="100%" height="640px"></iframe>
+        </div>
+      </div>
+      <br><br>
+
+
+      <a href="index.html" class="cta-button">Back to Homepage</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 Isabella Ouyang</p>
+    </div>
+  </footer>
+
+</body>
+</html>
