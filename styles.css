@@ -76,7 +76,7 @@ p {
   width: 375px; /* Fixed width resembling a phone screen */
   max-width: 100%; /* Ensure it doesn't exceed container width */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 10px;
+  border-radius: 50px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -229,6 +229,7 @@ nav.navbar .container {
   .prototype-text {
     width: 60%; /* Allocate 40% for text */
     margin-left: 5rem;
+    margin-right: 1rem;
   }
 
   .prototype-gif-container {
@@ -257,6 +258,7 @@ nav.navbar .container {
     width: 100%; /* Fixed width resembling a phone screen */
     max-width: 100%; /* Ensure it doesn't exceed container width */
     margin-top: 5rem; /* Maintain aspect ratio */
+    border-radius: 60px;
   }
 
   .prototype-text {
