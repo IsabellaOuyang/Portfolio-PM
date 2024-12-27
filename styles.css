@@ -23,6 +23,56 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* Prototype Hero Section with Gifs */
+.prototype-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.prototype-content {
+  display: flex;
+  flex-direction: column; /* Default: Stack for small screens */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.prototype-text {
+  margin-bottom: 1rem;
+}
+
+.prototype-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.prototype-text p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.prototype-gif-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.prototype-gif {
+  width: 375px; /* Fixed width resembling a phone screen */
+  max-width: 100%; /* Ensures it doesn't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Hero Section with Gradient Animation */
 .hero-section {
   height: 100vh;
@@ -158,6 +208,49 @@ nav.navbar .container {
 .mobile-menu-icon.open span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
+
+/* Media Queries for Project Hero*/
+@media (min-width: 768px) {
+  .prototype-content {
+    flex-direction: row; /* Place text and GIF side by side */
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .prototype-text {
+    width: 60%; /* Allocate 40% for text */
+    margin-left: 5rem;
+  }
+
+  .prototype-gif-container {
+    width: 40%; /* Allocate 60% for GIF */
+    justify-content: flex-start;
+  }
+
+  .prototype-gif {
+    width: 375px; /* Fixed width remains consistent for wide screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .prototype-content {
+    flex-direction: column; /* Stack text and GIF */
+    align-items: center;
+  }
+
+  .prototype-gif {
+    width: 100%; /* Full width for small screens */
+    max-width: 100%; /* Ensure no overflow */
+    margin-top: 5rem;
+  }
+
+  .prototype-text {
+    text-align: center;
+    width: 100%; /* Expand text width for better alignment */
+  }
+}
+
 
 /* Hero Section for Landing Page */
 .hero-section {
