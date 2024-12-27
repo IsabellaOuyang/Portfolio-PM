@@ -72,6 +72,14 @@ p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.prototype-video {
+  width: 375px; /* Fixed width resembling a phone screen */
+  max-width: 100%; /* Ensure it doesn't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Hero Section with Gradient Animation */
 .hero-section {
@@ -243,6 +251,12 @@ nav.navbar .container {
     width: 100%; /* Full width for small screens */
     max-width: 100%; /* Ensure no overflow */
     margin-top: 5rem;
+  }
+
+  .prototype-video {
+    width: 100%; /* Fixed width resembling a phone screen */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+    margin-top: 5rem; /* Maintain aspect ratio */
   }
 
   .prototype-text {
