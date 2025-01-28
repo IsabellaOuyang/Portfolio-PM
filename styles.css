@@ -359,9 +359,25 @@ nav.navbar .container {
   font-size: 1.2rem;
 }
 
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
 .skills-list span {
   padding: 0.5rem 1.5rem;
   background-color: #ded0b2;
+  color: white;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.category-list span {
+  padding: 0.5rem 1rem;
+  background-color: #D3D3D3;
   color: white;
   border-radius: 20px;
   font-family: 'Montserrat', sans-serif;
