@@ -95,22 +95,18 @@
 
       <h3>Target Audience</h3>
       <p>
-        Primarily targeting College students aged 17–24, preparing for internships or full-time roles in the U.S. workplace who are seeking to improve oral, written, and interpersonal communication skills.
-        <br>The platform also appeals to international students aiming to navigate cultural and linguistic challenges in professional settings, as well as career services and academic institutions looking to integrate a scalable communication training tool.
-      </p>
-      </div>
-
-      <div class="project-process">
-        <h3>Product Requirement Document (PRD)</h3>
-        <div class="iframe-container">
-          <iframe src="https://drive.google.com/file/d/1RNIOhJPwtWHoAHLkhzeAJCGz2z8QTTPo/preview" width="100%" height="640px"></iframe>
-        </div>
+        Primarily targeting non-native College students aged 17–24, preparing for internships or full-time roles in the U.S. workplace who are seeking to improve oral, written, and interpersonal communication skills.
         <br>
-        <h3>Product Roadmap</h3>
-        <div class="iframe-container">
-          <iframe src="https://drive.google.com/file/d/1uw8v1-c4hM8nh5R2CQCVT9ZxjWp2Mto1/preview" width="100%" height="640px"></iframe>
-        </div>
+        <br>The platform also appeals to native students aiming to improve their communication skills, as well as career services and academic institutions looking to integrate a scalable communication training tool.
+      </p>
+
+      <br><h3 onclick="toggleIframe()">User Interviews</h3>
+      <a class="cta-button" onclick="toggleIframe()">Click to see full content</a>
+      <div id="iframe-hiddencontainer" class="iframe-hiddencontainer">
+        <iframe src="https://drive.google.com/file/d/1yK164JtKZbfihKzj64lKAFoYvqd5Oj93/preview" width="100%" height="640px"></iframe>
       </div>
+      </div>
+      <br>
 
       <div class="project-goals">
         <h3>Solution</h3>
@@ -132,13 +128,15 @@
           <li><p>Conducted user surveys and interviews to identify pain points in students’ communication skills.</li>
           <li><p>Analyzed employer feedback to align curriculum goals with workplace expectations.</li>
           </ul>
-        <p>2. Prototyping:</p>
+        <p>2. Planning:</p>
+            <ul>
+              <li><p>Prioritized must-have features that have high values to the objectives and success of the app.</li>
+              <li><p>Developed a Product Roadmap to map out future implementation of features that have values and in the could-have categories.</li>
+            </ul>
+        <p>3. Prototyping:</p>
           <ul>
             <li><p>Designed and tested interactive modules, focusing on ease of use and engaging visuals.</li>
             <li><p>Incorporated feedback to refine app features, such as AI-powered assessments and role-play scenarios.</li>
-          </ul>
-        <p>3. Implementation:</p>
-          <ul>
             <li><p>Developed a curriculum of 3 units, 13 lessons, and 4 synchronous workshops.</li>
             <li><p>Structured lessons to include mini-modules, quizzes, and self-paced learning paths.</li>
           </ul>
@@ -146,34 +144,133 @@
           <ul>
             <li><p>Added streaks, certifications, and a personalized progress dashboard to motivate learners.</li>
           </ul>
-      </div>
+
+          <div class="docs-header">
+            <h3 class="doc-title">
+              <a href="https://drive.google.com/file/d/1sX9zfkOtNwRYm5qppJuRSD3z1kN2Lp1v/view?usp=sharing"
+              target="_blank"
+              class="mobile-only cta-button">Product Requirement Document (PRD)</a>
+            </h3>
+
+            <h3 class="doc-title">
+              <a href="https://drive.google.com/file/d/1uw8v1-c4hM8nh5R2CQCVT9ZxjWp2Mto1/view?usp=sharing"
+              target="_blank"
+              class="mobile-only cta-button">Product Roadmap</a>
+            </h3>
+          </div>
+
+          <div class="docs-container">
+            <div id="prd-iframe-container" class="doc-item">
+              <h3 class="doc-title">
+                <span class="desktop-only" onclick="toggleDocIframe('roadmap-iframe-container')">Product Requirement Doc</span>
+              </h3>
+              <iframe
+              src="https://drive.google.com/file/d/1sX9zfkOtNwRYm5qppJuRSD3z1kN2Lp1v/preview"
+              width="100%" height="600px">
+            </iframe>
+           </div>
+
+           <div id="roadmap-iframe-container" class="doc-item">
+             <h3 class="doc-title">
+               <span class="desktop-only" onclick="toggleDocIframe('roadmap-iframe-container')">Product Roadmap</span>
+             </h3>
+             <iframe
+             src="https://drive.google.com/file/d/1uw8v1-c4hM8nh5R2CQCVT9ZxjWp2Mto1/preview"
+             width="100%" height="600px">
+            </iframe>
+           </div>
+          </div>
+
       <br>
 
       <div class="project-process">
         <h3>Key Features</h3>
-        <p>1. Curriculum Structure:</p>
-          <ul>
-          <li><p>Unit 1: Foundational Communication Skills (e.g., professional introductions, email etiquette).</li>
-          <li><p>Unit 2: Workplace Scenarios (e.g., giving feedback, active listening).</li>
-          <li><p>Unit 3: Real-World Application (e.g., negotiations, managing crises).</li>
-          <li><p>Final Capstone Project.</li>
-          </ul>
-        <p>2. Interactive Learning:</p>
-          <ul>
-            <li><p>AI-powered feedback on written and verbal tasks.</li>
-            <li><p>Simulated conversations with branching choices.</li>
-            <li><p>Peer evaluation and group collaboration tools.</li>
-          </ul>
-        <p>3. Networking Opportunities:</p>
-          <ul>
-            <li><p>Built-in features such as broadcasts and news forum for connecting with professionals in relevant fields.</li>
-            <li><p>Opportunities for students to attend virtual workshops and participate in mentorship programs.</li>
-            <li><p>Networking activities designed to simulate real-world professional interactions.</li>
-          </ul>
-        <p>4. Community Building:</p>
-          <ul>
-            <li><p>Social features that enable learners to share tips, experiences, and feedback with peers.</li>
-          </ul>
+        <div class="prototype-content">
+        <div class="prototype-text">
+          <h3>1. Curriculum Structure</h3>
+            <ul>
+              <li><p>Unit 1: Foundational Communication Skills (e.g., professional introductions, email etiquette).</li>
+              <li><p>Unit 2: Workplace Scenarios (e.g., giving feedback, active listening).</li>
+              <li><p>Unit 3: Real-World Application (e.g., negotiations, managing crises).</li>
+              <li><p>Final Capstone Project.</li>
+            </ul>
+        </div>
+        <div class="prototype-gif-container">
+          <video
+            class="prototype-video"
+            src="img\CommUnity\CommUnity Prototype.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+          </video>
+        </div>
+        </div>
+
+        <div class="prototype-content">
+        <div class="prototype-text">
+          <h3>2. Interactive Learning</h3>
+            <ul>
+              <li><p>AI-powered feedback on written and verbal tasks.</li>
+              <li><p>Simulated conversations with branching choices.</li>
+              <li><p>Peer evaluation and group collaboration tools.</li>            </ul>
+        </div>
+        <div class="prototype-gif-container">
+          <video
+            class="prototype-video"
+            src="img\CommUnity\CommUnity Prototype.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+          </video>
+        </div>
+        </div>
+
+        <div class="prototype-content">
+        <div class="prototype-text">
+          <h3>3. Real-Time Practice</h3>
+            <ul>
+              <li><p>No scheduling needed—jump into a session anytime and build confidence at learner's own pace.</li>
+              <li><p>Receive personalized feedback reports and skill improvements, helping learners track their growth.</li>
+              <li><p>Practice without fear of mistakes—perfect for anyone looking to improve.</li>
+        </div>
+        <div class="prototype-gif-container">
+          <video
+            class="prototype-video"
+            src="img\CommUnity\CommUnity Prototype.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+          </video>
+        </div>
+        </div>
+
+        <div class="prototype-content">
+        <div class="prototype-text">
+          <h3>4. Networking Opportunities</h3>
+            <ul>
+              <li><p>Social features that enable learners to share tips, experiences, and feedback with peers.</li>
+              <li><p>Built-in features such as broadcasts and news forum for connecting with professionals in relevant fields.</li>
+              <li><p>Opportunities for students to attend virtual workshops and participate in mentorship programs.</li>
+        </div>
+        <div class="prototype-gif-container">
+          <video
+            class="prototype-video"
+            src="img\CommUnity\CommUnity Prototype.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          >
+          </video>
+        </div>
+        </div>
+
       </div>
       <br>
 

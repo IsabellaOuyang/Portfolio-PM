@@ -62,3 +62,23 @@ window.addEventListener('scroll', function() {
     }
   }
 });
+
+
+//show GoogleDocs
+function toggleIframe() {
+  var container = document.getElementById("iframe-hiddencontainer");
+  if (container.style.display === "none" || container.style.display === "") {
+    container.style.display = "block"; // Show iframe
+  } else {
+    container.style.display = "none"; // Hide iframe
+  }
+}
+
+function toggleDocIframe(id) {
+  var docContainer = document.getElementById(id);
+  if (docContainer.style.display === "none" || docContainer.style.display === "") {
+    docContainer.style.display = "block"; // Show iframe
+  } else {
+    docContainer.style.display = "none"; // Hide iframe
+  }
+}

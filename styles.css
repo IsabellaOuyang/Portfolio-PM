@@ -40,11 +40,12 @@ p {
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  text-align: center;
+  height: auto;
 }
 
 .prototype-text {
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .prototype-text h1 {
@@ -62,6 +63,7 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
+  height: auto;
 }
 
 .prototype-gif {
@@ -224,6 +226,7 @@ nav.navbar .container {
     text-align: left;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 5rem;
   }
 
   .prototype-text {
@@ -246,6 +249,7 @@ nav.navbar .container {
   .prototype-content {
     flex-direction: column; /* Stack text and GIF */
     align-items: center;
+    padding-bottom: 3rem;
   }
 
   .prototype-gif {
@@ -262,7 +266,7 @@ nav.navbar .container {
   }
 
   .prototype-text {
-    text-align: center;
+    text-align: left;
     width: 100%; /* Expand text width for better alignment */
   }
 }
@@ -487,6 +491,83 @@ nav.navbar .container {
 .iframe-container {
   display: flex;
   justify-content: center; /* Centers the iframe horizontally */
+}
+
+.iframe-hiddencontainer {
+  display: none; /* Hide by default */
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Container for both documents */
+/* Container for document titles */
+.docs-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Container for TWO documents */
+.docs-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Individual document container */
+.doc-item {
+  width: 48%; /* Each document takes up half the space */
+}
+
+/* Hide the embedded documents on small screens */
+@media (max-width: 768px) {
+  .docs-container {
+    display: none; /* Hide iframes on small screens */
+  }
+
+  .mobile-only {
+    display: block; /* Show clickable link on small screens */
+  }
+
+  .desktop-only {
+    display: none; /* Hide the embedded iframe titles */
+  }
+
+  .docs-header {
+    display: block; /* Stack titles vertically */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+/* Show iframes on larger screens */
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none; /* Hide links on larger screens */
+  }
+  .docs-header {
+    text-align: left; /* Align text to the left */
+  }
+  .docs-title {
+    text-align: left; /* Align text to the left */
+  }
+  .desktop-only {
+    display: inline; /* Show the embedded iframe titles */
+    text-align: left;
+  }
+}
+
+
+/* Hide the documents on small screens */
+@media (max-width: 768px) {
+  .docs-container {
+    display: block; /* Stack items on small screens */
+  }
+
+  .doc-item {
+    display: none; /* Hide iframes initially */
+    width: 100%; /* Full width when shown */
+  }
 }
 
 iframe.em-website {
