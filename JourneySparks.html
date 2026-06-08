@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MWNFN1DP6Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MWNFN1DP6Q');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isabella Ouyang | Product Manager, Journey Sparks EdTech Case Study">
+  <title>Isabella Ouyang | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">Isabella Ouyang</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="prototype-hero">
+    <div class="prototype-content">
+    <div class="prototype-text">
+      <h1>Journey Sparks</h1>
+      <p><i><strong>Turning Every Walk Into a Learning Moment</strong></i><br><br>
+        An AI powered EdTech and lifestyle product that transforms daily walks into moments of genuine discovery, with a personalized companion that sparks curiosity and captures memories.</p>
+      <a href="#project-details" class="cta-button">Explore Project</a>
+    </div>
+    <div class="prototype-gif-container">
+      <img
+        src="img/JourneySparks/Prototype.gif"
+        alt="Journey Sparks Prototype"
+        class="prototype-gif"
+      />
+    </div>
+  </div>
+  </section>
+
+  <!-- Project Details Section -->
+  <section id="project-details" class="project-details">
+    <div class="container">
+      <h2>About the Journey Sparks Project</h2>
+      <ul>
+        <li><p><strong>Type:</strong> Personal product, built and shipped</li>
+        <li><p><strong>Role:</strong> Product Manager and Co-Founder</li>
+        <li><p><strong>Timeline:</strong> Ongoing</li>
+        <li><p><strong>Tools Used:</strong> Figma, User Interviews, PRD, Product Roadmap, AI/LLM Integration, Competitive Analysis</li>
+        <li><p><strong>Objective:</strong> Define the product vision, prioritize the AI feature set, and bring to market a mobile experience that makes informal outdoor learning effortless and habitual.</li>
+      </ul>
+      <br>
+
+      <div class="project-info">
+      <h3>The Problem</h3>
+      <p>
+        Most people take daily walks without a second thought. Yet walks are rich with learning opportunity: local history, nature, architecture, and unexpected discoveries are everywhere.
+        The problem is that curiosity in the moment goes unanswered. You wonder about a building, a bird, or a street name and move on. That moment of genuine interest is lost.
+        <br><br>
+        Existing apps either gamify exercise or deliver generic content. None of them treat the walk itself as a learning context and none of them adapt to what you are actually curious about.
+      </p>
+      <br>
+
+      <h3>Research Insights</h3>
+      <p>
+        User interviews surfaced a consistent pattern: people described moments of curiosity during walks that they never followed up on because it felt like too much effort to stop, search, and context switch.
+        <br><br>
+        Secondary research in learning sciences confirmed the opportunity: experiential and place based learning produces stronger retention and intrinsic motivation than screen based instruction.
+        Informal learning during everyday activities is one of the most underleveraged channels in EdTech.
+      </p>
+      <br>
+
+      <h3>Product Vision and Strategy</h3>
+      <p>
+        Journey Sparks turns the walk into the curriculum. The product meets users in the moment of curiosity, delivers a bite sized insight tied to their exact location, and stores the memory for later reflection.
+        <br><br>
+        The core product bet: if we reduce the effort of satisfying curiosity to near zero, learning becomes a byproduct of a habit people already have.
+        AI is the enabling technology, but the product strategy is about behavior design, not technology showcase.
+      </p>
+      </div>
+
+      <div class="project-process">
+        <h3>Key Product Decisions</h3>
+
+        <div class="prototype-content">
+          <div class="prototype-text">
+            <p><strong>Decision 1: Companion framing over utility framing</strong></p>
+            <p>Tested both a utility framing (walking guide) and a companion framing (curious friend). Companion framing drove significantly higher emotional engagement and return intent in prototype testing. The splash screen tone, the name "Sparkie," and the encouraging in-step messages all came from this decision.</p>
+          </div>
+          <div class="prototype-gif-container">
+            <img src="img/JourneySparks/0.PNG" alt="Journey Sparks splash screen with companion tone" class="prototype-gif">
+          </div>
+        </div>
+
+        <div class="prototype-content">
+          <div class="prototype-text">
+            <p><strong>Decision 2: AI personalization over curated content</strong></p>
+            <p>Chose to build an LLM powered companion rather than a content library. Curated content would never match the specificity of what a user sees in front of them. Users pick their topic (Cities and Architecture, Nature, etc.) and exploration mode (Wander, Guided, Target), and the AI generates a mission for their exact location. The tradeoff was higher technical complexity for dramatically higher relevance.</p>
+          </div>
+          <div class="prototype-gif-container">
+            <img src="img/JourneySparks/1.PNG" alt="Journey Sparks home screen with topic and mode selectors" class="prototype-gif">
+          </div>
+        </div>
+
+        <div class="prototype-content">
+          <div class="prototype-text">
+            <p><strong>Decision 3: Walks only, not general exploration</strong></p>
+            <p>Scoped the MVP to walking contexts to maintain a clear use case and avoid feature bloat. Each mission is a set of place based tasks tied to the user's neighborhood. This kept the product focused and aligned with the health and lifestyle positioning, opening a second acquisition channel beyond EdTech.</p>
+          </div>
+          <div class="prototype-gif-container">
+            <img src="img/JourneySparks/2.PNG" alt="Journey Sparks mission list for today's exploration" class="prototype-gif">
+          </div>
+        </div>
+
+        <div class="prototype-content">
+          <div class="prototype-text">
+            <p><strong>Decision 4: Ask Sparkie as an in-walk AI layer</strong></p>
+            <p>Added a contextual AI prompt layer mid-walk so users could go deeper on any curiosity in the moment. Rather than switching apps to search, users get curated follow-up questions from Sparkie ("Why is this interesting?" "Tell me something surprising") that keep them in the experience. This reinforced the companion framing and increased time in app per session.</p>
+          </div>
+          <div class="prototype-gif-container">
+            <img src="img/JourneySparks/5.PNG" alt="Ask Sparkie AI prompts during a walk step" class="prototype-gif">
+          </div>
+        </div>
+
+        <div class="prototype-content">
+          <div class="prototype-text">
+            <p><strong>Decision 5: Memory capture and reflection layer</strong></p>
+            <p>Added a memory capture screen after early user feedback showed that the discovery moment felt ephemeral. Users wanted to come back to their sparks. The post-walk screen lets users add final thoughts, log how they felt, and save the journey. This became a core retention driver and differentiator from generic walking apps.</p>
+          </div>
+          <div class="prototype-gif-container">
+            <img src="img/JourneySparks/10.PNG" alt="Journey detail with AI notes and map after completing a journey" class="prototype-gif">
+          </div>
+        </div>
+
+        <div class="prototype-content">
+          <div class="prototype-text">
+            <p><strong>Decision 6: Journal as a long-term habit anchor</strong></p>
+            <p>Built a persistent journal so every walk accumulates into a record of curiosity over time. Each entry shows the topic, mode, duration, weather, and emotional tags from that session. A named journey with AI generated notes (like "Morning Light's Painted Breath") transforms a routine walk into something worth remembering, reinforcing the return habit.</p>
+          </div>
+          <div class="prototype-gif-container">
+            <img src="img/JourneySparks/9.PNG" alt="Journal showing history of past walks" class="prototype-gif">
+          </div>
+        </div>
+
+      </div>
+      <br>
+
+      <div class="project-goals">
+        <h3>Roadmap Priorities</h3>
+        <ul>
+          <li><p><strong>Phase 1 (Shipped):</strong> Core walk companion with AI generated location insights, memory capture, and personalized curiosity profile.</li>
+          <li><p><strong>Phase 2:</strong> Social layer, sharing sparks with friends and discovering what others found nearby.</li>
+          <li><p><strong>Phase 3:</strong> Institutional partnerships with schools and parks for structured experiential learning programs.</li>
+        </ul>
+      </div>
+
+      <div class="project-goals">
+        <h3>Success Metrics</h3>
+        <ul>
+          <li><p><strong>Habit Formation:</strong> Target 3+ walks per week with the app active among retained users within 30 days.</li>
+          <li><p><strong>Curiosity Engagement Rate:</strong> Percentage of walks where the user interacts with at least one spark, target 70%.</li>
+          <li><p><strong>Memory Return Rate:</strong> Percentage of users who revisit their memory collection within 7 days, a signal of emotional connection to the product.</li>
+          <li><p><strong>30 Day Retention:</strong> Target 40% monthly active user rate, higher than typical consumer apps given the daily habit context.</li>
+        </ul>
+      </div>
+
+      <div class="project-goals">
+        <h3>Reflection</h3>
+        <p>Journey Sparks is the project where I learned what it means to own the full product lifecycle: from the initial insight through research, prioritization, spec writing, working with engineers, and iterating based on real user behavior.
+          <br><br>
+          The biggest lesson was that the product framing matters as much as the features. The same AI capability felt like a gimmick in utility mode and felt genuinely delightful in companion mode. Getting that right required user research, not intuition.
+        </p>
+      </div>
+      <br>
+
+      <a href="https://journeysparks.app/" class="cta-button" target="_blank" rel="noopener">See the Live Product</a>
+      &nbsp;
+      <a href="index.html" class="cta-button">Back to Homepage</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 Isabella Ouyang</p>
+    </div>
+  </footer>
+
+</body>
+</html>

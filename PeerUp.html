@@ -12,7 +12,7 @@
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Isabella Ouyang | Aspiring Associate Product Manager">
+  <meta name="description" content="Isabella Ouyang | Product Manager, PeerUp EdTech Case Study">
   <title>Isabella Ouyang | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -46,7 +46,7 @@
     <div class="prototype-text">
       <h1>PeerUp</h1>
       <p><i><strong>Connecting Students for Collaborative Learning</strong></i><br><br>
-        An innovative platform to foster peer learning and collaboration in academic environments.</p>
+        Think Bumble for studying, a peer learning platform where AI matches students by academic goals and availability, so finding a study partner is as seamless as finding a date.</p>
       <a href="#project-details" class="cta-button">Explore Project</a>
     </div>
     <div class="prototype-gif-container">
@@ -67,80 +67,78 @@
       <ul>
         <li><p><strong>Type:</strong> Solo iteration on a group academic project</li>
         <li><p><strong>Role:</strong> Product Designer & Manager</li>
-        <li><p><strong>Timeline:</strong> 1 month (2018, 2023)</li>
+        <li><p><strong>Timeline:</strong> 1 month (redesigned to leverage AI matching)</li>
         <li><p><strong>Tools Used:</strong> Figma, Adobe XD, User Interviews, Persona and Scenario Development, UX Research, Competative Analysis, User Testing, Wireframe & Prototype</li>
         <li><p><strong>Objective:</strong> Address the growing need for personalized, peer-based support systems in education, especially in hybrid and remote learning environments. PeerUp is designed to connect students based on academic goals, learning styles, and complementary strengths to foster more effective study partnerships.</li>
       </ul>
       <br>
 
       <div class="project-info">
-      <h3>Market Need</h3>
+      <h3>The Problem Space</h3>
       <p>
-        With the rise of hybrid and remote education models, students often lack the face-to-face interactions that help them build collaborative learning relationships.
-        Research indicates that peer-supported learning improves retention, understanding, and motivation.
-        PeerUp aims to fill the gap by providing a digital solution that mimics the collaborative benefits of in-person study groups, while offering more personalized support.
+        User interviews revealed that students knew who they wanted to study with but had no frictionless way to coordinate. With the rise of hybrid and remote education, that same friction got worse.
+        Research confirms that peer supported learning improves retention, understanding, and motivation, yet no purpose built tool existed to make peer finding effortless.
+        The dating app market proved AI powered matching works at scale. Students have the exact same coordination problem, just applied to academics.
       </p>
       <br>
 
-      <h3>Value Proposition</h3>
+      <h3>Key Insight</h3>
       <p>
-        PeerUp delivers a platform where students can easily find peers with complementary skills and common academic goals.
-      The value lies in connecting learners who may struggle with certain subjects with others who excel, creating a balanced, mutually beneficial learning environment.
-      By incorporating learning theories like Constructivism and Social Learning Theory, the platform encourages users to teach and learn from one another, thus reinforcing their own knowledge while benefiting others.
+        The design hypothesis: if we reduce scheduling friction to near zero and surface compatibility signals clearly, peer learning becomes a default behavior rather than an effortful one.
+        By incorporating learning theories like Constructivism and Social Learning Theory, the platform encourages users to teach and learn from one another, reinforcing their own knowledge while benefiting others.
       </p>
       <br>
 
-      <h3>Target Audience</h3>
+      <h3>Who We Designed For</h3>
       <p>
-        Primarily targeting high school and college students, PeerUp caters to those who may feel isolated in remote learning environments, lack access to traditional tutoring services, or find it hard to seek help from TAs and professors.
-        The platform also appeals to educational institutions that want to boost student engagement and retention through peer-to-peer learning opportunities.
+        Designed primarily for high school and college students who feel isolated in remote learning environments, lack access to traditional tutoring, or find it hard to seek help from TAs and professors.
+        The platform also serves educational institutions that want to boost student engagement and retention through peer learning opportunities.
       </p>
       </div>
 
       <div class="project-image">
-        <h3>Product Development</h3>
+        <h3>Design Evolution</h3>
+        <p>The original version used a manual matching model where students posted their availability and needs. User testing revealed that manual effort killed adoption: if pairing was not automatic, it did not happen.
+        <br><br>
+        The redesign was driven by the rise of AI and a key market insight: dating apps had already proven that AI powered matching at scale changes user behavior. Students have the same coordination problem. Two shifts drove the new product direction: automated matching replaced manual posting, and schedule compatibility was surfaced upfront rather than treated as a separate step.
+        </p>
         <img src="img\PeerUp\peerup_final2.jpg" alt="PeerUp Mockup" class="responsive-img">
         <img src="img\PeerUp\peerup_final3.jpg" alt="PeerUp Mockup" class="responsive-img">
         <img src="img\PeerUp\peerup_final4.jpg" alt="PeerUp Mockup" class="responsive-img">
       </div>
 
       <div class="project-goals">
-        <h3>Project Goals</h3>
+        <h3>Design Goals</h3>
         <ul>
-          <li><p>Improve User Engagement: Increase daily active users (DAUs) by building in social gamification elements like learning streaks, badges, and rewards for successful peer tutoring sessions.</li>
-          <li><p>Retention & Impact: Measure success through user retention rates and educational outcomes such as improved grades or user-reported comprehension.</li>
-          <li><p>Personalization: Implement adaptive learning algorithms to match students based on learning styles, skill gaps, and academic goals, ensuring a personalized and effective study experience.</li>
+          <li><p>Reduce Onboarding Friction: Design social mechanics that make the first peer match feel immediate and rewarding, not effortful.</li>
+          <li><p>Retention and Impact: Measure success through user retention rates and educational outcomes such as improved grades or user reported comprehension.</li>
+          <li><p>Personalization: Build a recommendation interface that makes the right peer feel obvious, using adaptive matching based on learning styles, skill gaps, and academic goals.</li>
         </ul>
       </div>
 
       <div class="project-challenges">
-        <h3>Challenges & Solutions</h3>
-        <p>1. User Adoption & Engagement</p>
+        <h3>Product Tradeoffs</h3>
+        <p>1. Reducing Onboarding Friction</p>
           <ul>
-          <li><p>Challenge: Students may be reluctant to adopt yet another platform, especially if it doesn’t clearly demonstrate value upfront.</li>
-          <li><p>Solution: Introduce a streamlined onboarding process with quick wins, such as immediate peer matches or small rewards for completing initial activities. Emphasize the tangible benefits through tutorials, testimonials, and gamification features to encourage early engagement.</li>
+          <li><p>Challenge: Students are reluctant to adopt yet another platform if it does not demonstrate value immediately.</li>
+          <li><p>Decision: Prioritized immediate peer matching as the first action in onboarding, paired with small rewards to create an early win. Delayed profile completion to after the first match to reduce upfront effort.</li>
           </ul>
-        <p>2. Scaling Across Different Learning Environments</p>
+        <p>2. Designing for Diverse Learners</p>
           <ul>
-            <li><p>Challenge: A one-size-fits-all approach might not work for different types of learners (e.g., high school vs. university students) or across different subjects.</li>
-            <li><p>Solution: Develop customizable features for institutions, where the platform can be tailored to specific curricula or learning objectives.
-              Include options for group learning and advanced peer feedback for varied levels of study.</li>
+            <li><p>Challenge: High school and university students have different coordination norms and academic structures.</li>
+            <li><p>Decision: Built customizable institution level settings so the platform could be tailored to specific curricula, rather than trying to build a single universal experience.</li>
           </ul>
-          <p>3. Monitoring Learning Outcomes</p>
+          <p>3. Measuring Learning Outcomes</p>
             <ul>
-              <li><p>Challenge: It can be difficult to measure the actual educational outcomes and impact of peer collaboration.</li>
-              <li><p>Solution: Implement data collection on user performance before and after sessions.
-                Incorporate feedback systems that assess learning outcomes directly linked to PeerUp’s usage.
-                Offer users analytics to see how peer learning improves their academic performance.</li>
+              <li><p>Challenge: Peer collaboration impact is hard to attribute directly to a platform.</li>
+              <li><p>Decision: Implemented pre and post session data collection and surfaced personal analytics to users, making the value visible rather than asking them to trust it.</li>
             </ul>
       </div>
 
       <div class="project-process">
-        <h3>Product Process Book</h3>
-        <p>  This project has undergone re-design based on the CMU HCI course Information Design back in 2018.
-        With the development of Artificial Intelligence in recent year, I realized the idea of manual pair for peer study had become obsolete.
-        So, I iterated on the idea but refocused the technology to be more automated and personalized for users, to avoid the hustle of manual scheduling and pairing.
-        <br>Below is the process book for the previous ideation, research process, and prototype.
+        <h3>Process Book</h3>
+        <p>With the rise of AI, the original manual pairing model became obsolete. I iterated on the idea and refocused the technology to be more automated and personalized, eliminating the friction of manual scheduling entirely.
+        <br>Below is the process book from the original ideation, research, and prototype phase.
         </p>
         <div class="iframe-container">
           <iframe src="https://drive.google.com/file/d/1j85zwm7e0FL3WVebwbNZ0lropR2-6j_F/preview" width="100%" height="640px"></iframe>
